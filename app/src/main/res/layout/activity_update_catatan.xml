@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateCatatanActivity"
+    android:background="@color/pink">
+
+    <ImageView
+        android:id="@+id/editimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/baseline_edit_24"></ImageView>
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Edit Kata Kata"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="24sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/updatetitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Tuliskan judul"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editNoteHeading"
+        android:background="@drawable/bg_description"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+       >
+    </EditText>
+
+    <EditText
+        android:id="@+id/updatecontentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Masukan isi deskripsi"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/bg_description"
+        android:layout_below="@id/updatetitleEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="400dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="340dp"
+        android:background="@color/blue"
+        android:text="Submit" />
+
+
+</RelativeLayout>
