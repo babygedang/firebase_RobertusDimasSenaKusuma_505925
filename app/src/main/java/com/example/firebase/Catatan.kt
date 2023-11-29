@@ -1,7 +1,9 @@
 package com.example.firebase
 
-data class Catatan (
-    val id: String = "",
-    val title: String = "",
-    val content: String = "",
-)
+import java.io.Serializable
+
+data class Catatan(
+    var id: String = "",
+    var title: String = "",
+    var content: String = ""
+) : Serializable
